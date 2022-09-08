@@ -249,8 +249,7 @@
       </repository>
    </repositories>
 
-  <distributionManagement>
-    <pluginRepositories>
+   <pluginRepositories>
      <pluginRepository>
       <id>petclinic_snapshot</id>
       <name>petclinic_snapshot</name>
@@ -261,8 +260,8 @@
       <name>petclinic_release</name>
       <url>http://13.126.188.141:8081/repository/petclinic_release</url>
      </pluginRepository>
-    </pluginRepositories>
-  <distributionManagement>
+   </pluginRepositories>
+  
     
   <profiles>
     <profile>
