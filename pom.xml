@@ -235,24 +235,26 @@
     </license>
   </licenses>
 
-  <repositories>
-    <repository>
-      <id>petclinic_snapshot</id>
-      <name>petclinic_snapshot</name>
-      <url>http://13.126.188.141:8081/repository/petclinic_snapshot/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>petclinic_release</id>
-      <name>petclinic_snapshot</name>
-      <url>http://13.126.188.141:8081/repository/petclinic_release/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
+  <distributionManagement>
+   <repositories>
+     <repository>
+       <id>petclinic_snapshot</id>
+       <name>petclinic_snapshot</name>
+       <url>http://13.126.188.141:8081/repository/petclinic_snapshot/</url>
+       <snapshots>
+         <enabled>true</enabled>
+       </snapshots>
+     </repository>
+     <repository>
+       <id>petclinic_release</id>
+       <name>petclinic_snapshot</name>
+       <url>http://13.126.188.141:8081/repository/petclinic_release/</url>
+       <snapshots>
+         <enabled>false</enabled>
+       </snapshots>
+     </repository>
+   </repositories>
+  <distributionManagement>
 
   <pluginRepositories>
     <pluginRepository>
