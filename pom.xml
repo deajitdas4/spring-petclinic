@@ -236,45 +236,35 @@
   </licenses>
 
   <distributionManagement>
-   <repositories>
-     <repository>
-       <id>petclinic_snapshot</id>
-       <name>petclinic_snapshot</name>
-       <url>http://13.126.188.141:8081/repository/petclinic_snapshot/</url>
-       <snapshots>
-         <enabled>true</enabled>
-       </snapshots>
-     </repository>
-     <repository>
-       <id>petclinic_release</id>
-       <name>petclinic_snapshot</name>
-       <url>http://13.126.188.141:8081/repository/petclinic_release/</url>
-       <snapshots>
-         <enabled>false</enabled>
-       </snapshots>
-     </repository>
-   </repositories>
+    <repositories>
+      <repository>
+        <id>petclinic_snapshot</id>
+        <name>petclinic_snapshot</name>
+        <url>http://13.126.188.141:8081/repository/petclinic_snapshot/</url>
+      </repository>
+      <repository>
+        <id>petclinic_release</id>
+        <name>petclinic_snapshot</name>
+        <url>http://13.126.188.141:8081/repository/petclinic_release/</url>
+      </repository>
+    </repositories>
   <distributionManagement>
 
-  <pluginRepositories>
-    <pluginRepository>
-      <id>spring-snapshots</id>
-      <name>Spring Snapshots</name>
-      <url>https://repo.spring.io/snapshot</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
+  <distributionManagement>
+    <pluginRepositories>
+     <pluginRepository>
+      <id>petclinic_snapshot</id>
+      <name>petclinic_snapshot</name>
+      <url>http://13.126.188.141:8081/repository/petclinic_snapshot</url>
     </pluginRepository>
-    <pluginRepository>
-      <id>spring-milestones</id>
-      <name>Spring Milestones</name>
-      <url>https://repo.spring.io/milestone</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-  </pluginRepositories>
-
+     <pluginRepository>
+      <id>petclinic_release</id>
+      <name>petclinic_release</name>
+      <url>http://13.126.188.141:8081/repository/petclinic_release</url>
+     </pluginRepository>
+    </pluginRepositories>
+  <distributionManagement>
+    
   <profiles>
     <profile>
       <id>css</id>
