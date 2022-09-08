@@ -237,17 +237,17 @@
 
   <repositories>
     <repository>
-      <id>spring-snapshots</id>
-      <name>Spring Snapshots</name>
-      <url>https://repo.spring.io/snapshot</url>
+      <id>petclinic_snapshot</id>
+      <name>petclinic_snapshot</name>
+      <url>http://13.126.188.141:8081/repository/petclinic_snapshot/</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
     </repository>
     <repository>
-      <id>spring-milestones</id>
-      <name>Spring Milestones</name>
-      <url>https://repo.spring.io/milestone</url>
+      <id>petclinic_release</id>
+      <name>petclinic_snapshot</name>
+      <url>http://13.126.188.141:8081/repository/petclinic_release/</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
