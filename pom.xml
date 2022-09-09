@@ -240,12 +240,12 @@
       <repository>
         <id>petclinic_snapshot</id>
         <name>petclinic_snapshot</name>
-        <url>https://13.126.188.141:8081/repository/petclinic_snapshot/</url>
+        <url>http://13.234.217.45:8081/repository/petclinic_snapshot/</url>
       </repository>
       <repository>
         <id>petclinic_release</id>
         <name>petclinic_snapshot</name>
-        <url>https://13.126.188.141:8081/repository/petclinic_release/</url>
+        <url>http://13.234.217.45:8081/repository/petclinic_release/</url>
       </repository>
    </repositories>
 
@@ -253,12 +253,12 @@
      <pluginRepository>
       <id>petclinic_snapshot</id>
       <name>petclinic_snapshot</name>
-      <url>https://13.126.188.141:8081/repository/petclinic_snapshot</url>
+      <url>http://13.234.217.45:8081/repository/petclinic_snapshot/</url>
     </pluginRepository>
      <pluginRepository>
       <id>petclinic_release</id>
       <name>petclinic_release</name>
-      <url>https://13.126.188.141:8081/repository/petclinic_release</url>
+      <url>http://13.234.217.45:8081/repository/petclinic_release/</url>
      </pluginRepository>
    </pluginRepositories>
   
