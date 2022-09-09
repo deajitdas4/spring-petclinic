@@ -235,8 +235,8 @@
     </license>
   </licenses>
 
-  
-   <repositories>
+  <distributionManagement>
+     <repositories>
       <repository>
         <id>petclinic_snapshot</id>
         <name>petclinic_snapshot</name>
@@ -247,9 +247,10 @@
         <name>petclinic_snapshot</name>
         <url>http://13.234.217.45:8081/repository/petclinic_release/</url>
       </repository>
-   </repositories>
-
-   <pluginRepositories>
+     </repositories>
+  <distributionManagement>
+   
+    <pluginRepositories>
      <pluginRepository>
       <id>petclinic_snapshot</id>
       <name>petclinic_snapshot</name>
