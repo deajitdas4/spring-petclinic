@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                git url: "https://github.com/deajitdas4/spring-petclinic.git",
+                git "https://github.com/deajitdas4/spring-petclinic.git",
                 sh "mvn deploy -Dskiptest -Dcheckstyle.skip"
             }
         }
