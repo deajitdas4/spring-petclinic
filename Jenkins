@@ -1,16 +1,14 @@
 pipeline{
     agent any
     stages{
-        stage("Build"){
+        stage("Git"){
             steps{
-                git url: 'https://github.com/deajitdas4/spring-petclinic.git', 
-                sh 'mvn deploy -Dskiptest -Dcheckstyle.skip'
+                git url: 'https://github.com/deajitdas4/spring-petclinic.git'
             }
         }
-        stage("Setup Env"){
+        stage("Build"){
             steps{
-                sh 'docker build -t petclinic:v1 .',
-                sh 'docker run -p 6060:8080 -d petclinic:v1'
+                sh 'mvn deploy -Dskiptest -Dcheckstyle.skip'
             }
         }
       }
