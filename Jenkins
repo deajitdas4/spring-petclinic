@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages{
+        stage("Git"){
+            steps{
+                git branch: '*/main', url: 'https://github.com/deajitdas4/spring-petclinic.git'
+            }
+        }
+        stage("Build"){
+            steps{
+                mvn deploy -Dskiptest -Dcheckstyle.skip
+            }
+        }  
+     }
+  }
