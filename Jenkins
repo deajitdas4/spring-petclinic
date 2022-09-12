@@ -11,5 +11,10 @@ pipeline {
                 sh 'docker build -t petclinic:v1 .'
                 }
          }
+         stage("Run"){
+            steps{
+                sh 'docker run -p 7070:8080 -d petclinic:v1'
+                }
+         }  
     }
 }
