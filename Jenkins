@@ -6,6 +6,5 @@ pipeline{
                 git branch: '*/main', url: 'https://github.com/deajitdas4/spring-petclinic.git'
             }
         }
-  
      }
   }
