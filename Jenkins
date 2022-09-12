@@ -5,6 +5,11 @@ pipeline {
             steps{
                 sh 'mvn install -Dskiptest -Dcheckstyle.skip'
                 }
-         }      
+         }
+         stage("Deploy"){
+            steps{
+                sh 'docker build -t petclinic:v1 .' , sh 'docker run -p 7070:8080 -d petclinic:v1'
+                }
+         }
     }
 }
