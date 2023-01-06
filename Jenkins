@@ -1,5 +1,11 @@
 pipeline {
-    agent any
+    agent {
+       label "Java"
+        }
+    options {
+        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', DaysToKeepStr: '', NumToKeepStr: '5')
+        disableConcurrentBuilds()
+        }
     stages{
         stage("Build"){
             steps{
