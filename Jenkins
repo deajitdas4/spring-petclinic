@@ -3,7 +3,7 @@ pipeline {
        label "Java"
         }
     options {
-        buildDiscarder logRotator(DaysToKeepStr: '', NumToKeepStr: '5')
+        buildDiscarder logRotator(daysToKeepStr: '', numToKeepStr: '5')
         disableConcurrentBuilds()
         }
     stages{
